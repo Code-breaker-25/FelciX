@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import Image from "next/image";
 import { Sidebar, SidebarBody, SidebarLink } from "../ui/sidebar";
 import {
   IconArrowLeft,
@@ -64,13 +65,13 @@ export function SidebarDemo({ children }: { children: React.ReactNode }) {
                 label: "Pavan Kumar",
                 href: "#",
                 icon: (
-                  <img
-                    src="/boy.jpg"
-                    className="h-6 w-6 shrink-0 rounded-full"
-                    width={40}
-                    height={40}
-                    alt="Avatar"
-                  />
+                  <Image
+  src="/boy.jpg"
+  alt="Avatar"
+  width={24}
+  height={24}
+  className="h-6 w-6 shrink-0 rounded-full"
+/>
                 ),
               }}
             />
@@ -89,7 +90,7 @@ export function SidebarDemo({ children }: { children: React.ReactNode }) {
 export const Logo = () => {
   return (
     <a href="#" className="relative z-20 flex items-center space-x-2 py-1 text-xs font-normal text-white">
-      <img src="/logo.png" alt="Logo" className="h-7 w-auto" />
+            <Image src="/logo.png" alt="Logo" width={0} height={0} sizes="100vw" className="h-7 w-auto" />
       <motion.span
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -103,7 +104,7 @@ export const Logo = () => {
 export const LogoIcon = () => {
   return (
     <a href="#" className="relative z-20 flex items-center space-x-2 py-1 text-xs font-normal text-white">
-      <img src="/neo_logo.png" alt="Logo Icon" className="h-5 w-auto" />
+      <Image src="/neo_logo.png" alt="Logo Icon" width={20} height={20} className="h-5 w-auto" />
     </a>
   );
 };

@@ -8,7 +8,6 @@ import {
   performanceMetricsData, 
   operationalMetricsData, 
   qualityMetricsData, 
-  visualizationMetricsData 
 } from "@/utils/dummyData";
 
 const Metrics = () => {

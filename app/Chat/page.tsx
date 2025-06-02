@@ -4,7 +4,7 @@ import { SidebarDemo } from "@/components/Layout/Sidebar";
 import Typewriter from "@/components/Typewriter";
 import { useState, useRef, useEffect } from "react";
 import { ChatInput } from "@/components/ui/chat-input";
-import { Paperclip, Mic, CornerDownLeft, Share } from "lucide-react";
+import { Paperclip, Mic, CornerDownLeft} from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import AiReplyCard from "@/components/AiReplyCard";
 
